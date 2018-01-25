@@ -1,5 +1,3 @@
-#Написать функцию для поиска разницы сумм всех четных и всех нечетных чисел среди 100 случайно сгенерированных чисел в произвольном числовом диапазоне. Т.е. от суммы четных чисел вычесть сумму нечетных чисел.
-
 import random
 
 def diff_even_odd(num_limit, lower_bound, upper_bound):
@@ -8,12 +6,12 @@ def diff_even_odd(num_limit, lower_bound, upper_bound):
     odd = 0
 
     for i in range(num_limit):
-        random_vars.append(random.randint(lower_bound, upper_bound))
+        random_vars = random.randint(lower_bound, upper_bound)
 
-        if random_vars[i] % 2 == 0:
-            even += random_vars[i]
+        if random_vars % 2 == 0:
+            even += random_vars
         else:
-            odd += random_vars[i]
+            odd += random_vars
 
         res = even - odd
         return res
