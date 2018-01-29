@@ -8,8 +8,8 @@ def fibonacci(n):
 
 fib_numbers = 10
 
-lst = (sum([fibonacci(i) for i in range(1, fib_numbers+1)]))
-print(lst)
+res = (sum([fibonacci(i) for i in range(1, fib_numbers+1)]))
+print(res)
 
 
 
